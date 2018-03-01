@@ -14,16 +14,17 @@ apt-get install squid3 apache2-utils
 #apt-get -y install wget
 #clear
 
-echo 
-" 27% COMPLETE "
+#echo 
+#" 27% COMPLETE "
 
 #installing squid3
 #apt-get -y install squid3
 #rm -f #/etc#/squid3/squid.#conf
 
 #restoring squid config with open port proxy 8080,7166
-wget -P /etc/squid3/ "https://raw.githubusercontent.com/test2/script/master/script/squid.conf"
 cp /etc/squid3/squid.conf /etc/squid3/squid.conf.orig
+wget -P /etc/squid3/ "https://raw.githubusercontent.com/test2/script/master/script/squid.conf"
+#cp /etc/squid3/squid.conf /etc/squid3/squid.conf.orig
 service squid3 restart
 cd
 
