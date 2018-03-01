@@ -10,15 +10,15 @@
 #" AUTOSCRIPT START 1%"
 
 #update
-apt-get update
-apt-get -y install wget
-clear
+apt-get install squid3 apache2-utils
+#apt-get -y install wget
+#clear
 
 echo 
 " 27% COMPLETE "
 
 #installing squid3
-apt-get -y install squid3
+#apt-get -y install squid3
 #rm -f #/etc#/squid3/squid.#conf
 
 #restoring squid config with open port proxy 8080,7166
